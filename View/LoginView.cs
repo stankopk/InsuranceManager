@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InsuranceManager.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,17 @@ namespace InsuranceManager
         public LoginView()
         {
             InitializeComponent();
+        }
+
+        private void RegisterBtn_Click(object sender, EventArgs e)
+        {
+            RegisterView rv = new RegisterView();
+            rv.Show();
+        }
+
+        private void LoginView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
