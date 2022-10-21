@@ -57,7 +57,7 @@
             // 
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Palatino Linotype", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblLogin.Location = new System.Drawing.Point(198, 97);
+            this.lblLogin.Location = new System.Drawing.Point(208, 77);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(64, 26);
             this.lblLogin.TabIndex = 2;
