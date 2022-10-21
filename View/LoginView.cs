@@ -22,9 +22,25 @@ namespace InsuranceManager
         {
             RegisterView rv = new RegisterView();
             rv.Show();
+            this.Hide();
         }
 
         private void LoginView_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegisterLabel_Click(object sender, EventArgs e)
         {
 
         }

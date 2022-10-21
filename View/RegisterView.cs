@@ -21,5 +21,32 @@ namespace InsuranceManager.View
         {
 
         }
+
+        private void ConfirmPassLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ReturnBtn_Click(object sender, EventArgs e)
+        {
+            LoginView lv = new LoginView();
+            lv.Show();
+            this.Hide();
+        }
+
+        private void RegisterView_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PasswordTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ConfirmPassTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
