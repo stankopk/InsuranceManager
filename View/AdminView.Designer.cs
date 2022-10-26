@@ -32,14 +32,16 @@
             this.CreateBtn = new System.Windows.Forms.Button();
             this.RemoveBtn = new System.Windows.Forms.Button();
             this.UpdateBtn = new System.Windows.Forms.Button();
-            this.DelateBtn = new System.Windows.Forms.Button();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // WelcomeLbl
             // 
             this.WelcomeLbl.AutoSize = true;
             this.WelcomeLbl.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WelcomeLbl.Location = new System.Drawing.Point(170, 66);
+            this.WelcomeLbl.Location = new System.Drawing.Point(177, 80);
             this.WelcomeLbl.Name = "WelcomeLbl";
             this.WelcomeLbl.Size = new System.Drawing.Size(160, 26);
             this.WelcomeLbl.TabIndex = 0;
@@ -75,28 +77,38 @@
             this.UpdateBtn.Text = "Update";
             this.UpdateBtn.UseVisualStyleBackColor = true;
             // 
-            // DelateBtn
+            // DeleteBtn
             // 
-            this.DelateBtn.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DelateBtn.Location = new System.Drawing.Point(375, 347);
-            this.DelateBtn.Name = "DelateBtn";
-            this.DelateBtn.Size = new System.Drawing.Size(86, 33);
-            this.DelateBtn.TabIndex = 4;
-            this.DelateBtn.Text = "Delate";
-            this.DelateBtn.UseVisualStyleBackColor = true;
+            this.DeleteBtn.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteBtn.Location = new System.Drawing.Point(375, 347);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(86, 33);
+            this.DeleteBtn.TabIndex = 4;
+            this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(98, 151);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(320, 150);
+            this.dataGridView1.TabIndex = 5;
             // 
             // AdminView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(504, 427);
-            this.Controls.Add(this.DelateBtn);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.UpdateBtn);
             this.Controls.Add(this.RemoveBtn);
             this.Controls.Add(this.CreateBtn);
             this.Controls.Add(this.WelcomeLbl);
             this.Name = "AdminView";
             this.Text = "AdminView";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,6 +120,7 @@
         private System.Windows.Forms.Button CreateBtn;
         private System.Windows.Forms.Button RemoveBtn;
         private System.Windows.Forms.Button UpdateBtn;
-        private System.Windows.Forms.Button DelateBtn;
+        private System.Windows.Forms.Button DeleteBtn;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
