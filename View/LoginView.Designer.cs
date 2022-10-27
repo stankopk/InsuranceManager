@@ -120,7 +120,7 @@
             this.RegisterLabel.Name = "RegisterLabel";
             this.RegisterLabel.Size = new System.Drawing.Size(217, 36);
             this.RegisterLabel.TabIndex = 7;
-            this.RegisterLabel.Text = "Don\'t have an account yet?\r\nClick here to create an account.";
+            this.RegisterLabel.Text = "Don\'t have an account yet?\r\nClick here to create an account:\r\n";
             this.RegisterLabel.Click += new System.EventHandler(this.RegisterLabel_Click);
             // 
             // label3
