@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -48,7 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -61,6 +63,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RegisterDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegisterDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="View\AdminView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +82,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\RegisterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RegisterView.Designer.cs">
+      <DependentUpon>RegisterView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\AdminView.resx">
       <DependentUpon>AdminView.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +104,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\RegisterView.resx">
+      <DependentUpon>RegisterView.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -100,6 +116,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="RegisterDataSet.xsc">
+      <DependentUpon>RegisterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegisterDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegisterDataSet.xss">
+      <DependentUpon>RegisterDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -109,12 +136,12 @@
     <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataBase.mdf">
+    <Content Include="Database.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="DataBase_log.ldf">
+    <Content Include="Database_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>DataBase.mdf</DependentUpon>
+      <DependentUpon>Database.mdf</DependentUpon>
     </Content>
     <Content Include="Resources\hello.jpg" />
   </ItemGroup>
