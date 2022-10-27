@@ -44,6 +44,7 @@
             this.txtBoxUsername.Name = "txtBoxUsername";
             this.txtBoxUsername.Size = new System.Drawing.Size(249, 24);
             this.txtBoxUsername.TabIndex = 0;
+            this.txtBoxUsername.TextChanged += new System.EventHandler(this.txtBoxUsername_TextChanged);
             // 
             // btnEnter
             // 
@@ -72,6 +73,7 @@
             this.txtBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtBoxPassword.Location = new System.Drawing.Point(118, 161);
             this.txtBoxPassword.Name = "txtBoxPassword";
+            this.txtBoxPassword.PasswordChar = '*';
             this.txtBoxPassword.Size = new System.Drawing.Size(249, 24);
             this.txtBoxPassword.TabIndex = 3;
             // 

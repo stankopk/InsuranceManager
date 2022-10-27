@@ -24,7 +24,29 @@ namespace InsuranceManager.View
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (UsernameTxt.Text != null && PasswordTxt.Text != null)
+            {
+                try
+                {
+                    Connect obj = new Connect();
+                    obj.conn.ConnectionString = obj.locate;
+                    obj.conn.Open();
+                    string insertUser = "insert into usersTable values ('"+UsernameTxt.Text+"', '"+PasswordTxt.Text+"')";
+                    obj.cmd.Connection = obj.conn;
+                    obj.cmd.CommandText = insertUser;
+                    obj.cmd.ExecuteNonQuery();
+                    obj.conn.Close();
+                    MessageBox.Show("Registration has been completed");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error" + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -57,6 +79,11 @@ namespace InsuranceManager.View
             LoginView lv = new LoginView();
             lv.Show();
             this.Hide();
+        }
+
+        private void RegisterView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

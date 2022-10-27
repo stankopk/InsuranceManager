@@ -24,7 +24,7 @@ namespace InsuranceManager {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class RegisterDataSet : global::System.Data.DataSet {
         
-        private TableDataTable tableTable;
+        private usersTableDataTable tableusersTable;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace InsuranceManager {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Table"] != null)) {
-                    base.Tables.Add(new TableDataTable(ds.Tables["Table"]));
+                if ((ds.Tables["usersTable"] != null)) {
+                    base.Tables.Add(new usersTableDataTable(ds.Tables["usersTable"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace InsuranceManager {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public TableDataTable Table {
+        public usersTableDataTable usersTable {
             get {
-                return this.tableTable;
+                return this.tableusersTable;
             }
         }
         
@@ -152,8 +152,8 @@ namespace InsuranceManager {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Table"] != null)) {
-                    base.Tables.Add(new TableDataTable(ds.Tables["Table"]));
+                if ((ds.Tables["usersTable"] != null)) {
+                    base.Tables.Add(new usersTableDataTable(ds.Tables["usersTable"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace InsuranceManager {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableTable = ((TableDataTable)(base.Tables["Table"]));
+            this.tableusersTable = ((usersTableDataTable)(base.Tables["usersTable"]));
             if ((initTable == true)) {
-                if ((this.tableTable != null)) {
-                    this.tableTable.InitVars();
+                if ((this.tableusersTable != null)) {
+                    this.tableusersTable.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace InsuranceManager {
             this.Namespace = "http://tempuri.org/RegisterDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableTable = new TableDataTable();
-            base.Tables.Add(this.tableTable);
+            this.tableusersTable = new usersTableDataTable();
+            base.Tables.Add(this.tableusersTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeTable() {
+        private bool ShouldSerializeusersTable() {
             return false;
         }
         
@@ -270,23 +270,23 @@ namespace InsuranceManager {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void TableRowChangeEventHandler(object sender, TableRowChangeEvent e);
+        public delegate void usersTableRowChangeEventHandler(object sender, usersTableRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class TableDataTable : global::System.Data.TypedTableBase<TableRow> {
+        public partial class usersTableDataTable : global::System.Data.TypedTableBase<usersTableRow> {
             
-            private global::System.Data.DataColumn columnUserName;
+            private global::System.Data.DataColumn columnusername;
             
-            private global::System.Data.DataColumn columnPassword;
+            private global::System.Data.DataColumn columnpassword;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TableDataTable() {
-                this.TableName = "Table";
+            public usersTableDataTable() {
+                this.TableName = "usersTable";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -294,7 +294,7 @@ namespace InsuranceManager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal TableDataTable(global::System.Data.DataTable table) {
+            internal usersTableDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -311,24 +311,24 @@ namespace InsuranceManager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected TableDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected usersTableDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn UserNameColumn {
+            public global::System.Data.DataColumn usernameColumn {
                 get {
-                    return this.columnUserName;
+                    return this.columnusername;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn PasswordColumn {
+            public global::System.Data.DataColumn passwordColumn {
                 get {
-                    return this.columnPassword;
+                    return this.columnpassword;
                 }
             }
             
@@ -343,53 +343,53 @@ namespace InsuranceManager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TableRow this[int index] {
+            public usersTableRow this[int index] {
                 get {
-                    return ((TableRow)(this.Rows[index]));
+                    return ((usersTableRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event TableRowChangeEventHandler TableRowChanging;
+            public event usersTableRowChangeEventHandler usersTableRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event TableRowChangeEventHandler TableRowChanged;
+            public event usersTableRowChangeEventHandler usersTableRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event TableRowChangeEventHandler TableRowDeleting;
+            public event usersTableRowChangeEventHandler usersTableRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event TableRowChangeEventHandler TableRowDeleted;
+            public event usersTableRowChangeEventHandler usersTableRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddTableRow(TableRow row) {
+            public void AddusersTableRow(usersTableRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TableRow AddTableRow(string UserName, string Password) {
-                TableRow rowTableRow = ((TableRow)(this.NewRow()));
+            public usersTableRow AddusersTableRow(string username, string password) {
+                usersTableRow rowusersTableRow = ((usersTableRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        UserName,
-                        Password};
-                rowTableRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowTableRow);
-                return rowTableRow;
+                        username,
+                        password};
+                rowusersTableRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowusersTableRow);
+                return rowusersTableRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TableRow FindByUserName(string UserName) {
-                return ((TableRow)(this.Rows.Find(new object[] {
-                            UserName})));
+            public usersTableRow FindByusername(string username) {
+                return ((usersTableRow)(this.Rows.Find(new object[] {
+                            username})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                TableDataTable cln = ((TableDataTable)(base.Clone()));
+                usersTableDataTable cln = ((usersTableDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -397,63 +397,56 @@ namespace InsuranceManager {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new TableDataTable();
+                return new usersTableDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnUserName = base.Columns["UserName"];
-                this.columnPassword = base.Columns["Password"];
+                this.columnusername = base.Columns["username"];
+                this.columnpassword = base.Columns["password"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnUserName = new global::System.Data.DataColumn("UserName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnUserName);
-                this.columnPassword = new global::System.Data.DataColumn("Password", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPassword);
+                this.columnusername = new global::System.Data.DataColumn("username", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnusername);
+                this.columnpassword = new global::System.Data.DataColumn("password", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpassword);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnUserName}, true));
-                this.columnUserName.AllowDBNull = false;
-                this.columnUserName.Unique = true;
-                this.columnUserName.MaxLength = 15;
-                this.columnPassword.AllowDBNull = false;
-                this.columnPassword.MaxLength = 20;
-                this.ExtendedProperties.Add("Generator_RowClassName", "TableRow");
-                this.ExtendedProperties.Add("Generator_RowEvArgName", "TableRowChangeEvent");
-                this.ExtendedProperties.Add("Generator_RowEvHandlerName", "TableRowChangeEventHandler");
-                this.ExtendedProperties.Add("Generator_TableClassName", "TableDataTable");
-                this.ExtendedProperties.Add("Generator_TablePropName", "Table");
-                this.ExtendedProperties.Add("Generator_TableVarName", "tableTable");
-                this.ExtendedProperties.Add("Generator_UserTableName", "Table");
+                                this.columnusername}, true));
+                this.columnusername.AllowDBNull = false;
+                this.columnusername.Unique = true;
+                this.columnusername.MaxLength = 15;
+                this.columnpassword.AllowDBNull = false;
+                this.columnpassword.MaxLength = 20;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TableRow NewTableRow() {
-                return ((TableRow)(this.NewRow()));
+            public usersTableRow NewusersTableRow() {
+                return ((usersTableRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new TableRow(builder);
+                return new usersTableRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(TableRow);
+                return typeof(usersTableRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.TableRowChanged != null)) {
-                    this.TableRowChanged(this, new TableRowChangeEvent(((TableRow)(e.Row)), e.Action));
+                if ((this.usersTableRowChanged != null)) {
+                    this.usersTableRowChanged(this, new usersTableRowChangeEvent(((usersTableRow)(e.Row)), e.Action));
                 }
             }
             
@@ -461,8 +454,8 @@ namespace InsuranceManager {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.TableRowChanging != null)) {
-                    this.TableRowChanging(this, new TableRowChangeEvent(((TableRow)(e.Row)), e.Action));
+                if ((this.usersTableRowChanging != null)) {
+                    this.usersTableRowChanging(this, new usersTableRowChangeEvent(((usersTableRow)(e.Row)), e.Action));
                 }
             }
             
@@ -470,8 +463,8 @@ namespace InsuranceManager {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.TableRowDeleted != null)) {
-                    this.TableRowDeleted(this, new TableRowChangeEvent(((TableRow)(e.Row)), e.Action));
+                if ((this.usersTableRowDeleted != null)) {
+                    this.usersTableRowDeleted(this, new usersTableRowChangeEvent(((usersTableRow)(e.Row)), e.Action));
                 }
             }
             
@@ -479,14 +472,14 @@ namespace InsuranceManager {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.TableRowDeleting != null)) {
-                    this.TableRowDeleting(this, new TableRowChangeEvent(((TableRow)(e.Row)), e.Action));
+                if ((this.usersTableRowDeleting != null)) {
+                    this.usersTableRowDeleting(this, new usersTableRowChangeEvent(((usersTableRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveTableRow(TableRow row) {
+            public void RemoveusersTableRow(usersTableRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -513,7 +506,7 @@ namespace InsuranceManager {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "TableDataTable";
+                attribute2.FixedValue = "usersTableDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -557,36 +550,36 @@ namespace InsuranceManager {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class TableRow : global::System.Data.DataRow {
+        public partial class usersTableRow : global::System.Data.DataRow {
             
-            private TableDataTable tableTable;
+            private usersTableDataTable tableusersTable;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal TableRow(global::System.Data.DataRowBuilder rb) : 
+            internal usersTableRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableTable = ((TableDataTable)(this.Table));
+                this.tableusersTable = ((usersTableDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string UserName {
+            public string username {
                 get {
-                    return ((string)(this[this.tableTable.UserNameColumn]));
+                    return ((string)(this[this.tableusersTable.usernameColumn]));
                 }
                 set {
-                    this[this.tableTable.UserNameColumn] = value;
+                    this[this.tableusersTable.usernameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Password {
+            public string password {
                 get {
-                    return ((string)(this[this.tableTable.PasswordColumn]));
+                    return ((string)(this[this.tableusersTable.passwordColumn]));
                 }
                 set {
-                    this[this.tableTable.PasswordColumn] = value;
+                    this[this.tableusersTable.passwordColumn] = value;
                 }
             }
         }
@@ -595,22 +588,22 @@ namespace InsuranceManager {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class TableRowChangeEvent : global::System.EventArgs {
+        public class usersTableRowChangeEvent : global::System.EventArgs {
             
-            private TableRow eventRow;
+            private usersTableRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TableRowChangeEvent(TableRow row, global::System.Data.DataRowAction action) {
+            public usersTableRowChangeEvent(usersTableRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TableRow Row {
+            public usersTableRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -638,7 +631,7 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class TableTableAdapter : global::System.ComponentModel.Component {
+    public partial class usersTableTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -652,7 +645,7 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public TableTableAdapter() {
+        public usersTableTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -749,34 +742,34 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Table";
-            tableMapping.ColumnMappings.Add("UserName", "UserName");
-            tableMapping.ColumnMappings.Add("Password", "Password");
+            tableMapping.DataSetTable = "usersTable";
+            tableMapping.ColumnMappings.Add("username", "username");
+            tableMapping.ColumnMappings.Add("password", "password");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Table] WHERE (([UserName] = @Original_UserName) AND ([Password" +
-                "] = @Original_Password))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[usersTable] WHERE (([username] = @Original_username) AND ([pas" +
+                "sword] = @Original_password))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_UserName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_username", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "username", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "password", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Table] ([UserName], [Password]) VALUES (@UserName, @Password);" +
-                "\r\nSELECT UserName, Password FROM [Table] WHERE (UserName = @UserName)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[usersTable] ([username], [password]) VALUES (@username, @passw" +
+                "ord);\r\nSELECT username, password FROM usersTable WHERE (username = @username)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UserName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@username", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Table] SET [UserName] = @UserName, [Password] = @Password WHERE (([" +
-                "UserName] = @Original_UserName) AND ([Password] = @Original_Password));\r\nSELECT " +
-                "UserName, Password FROM [Table] WHERE (UserName = @UserName)";
+            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[usersTable] SET [username] = @username, [password] = @password WHER" +
+                "E (([username] = @Original_username) AND ([password] = @Original_password));\r\nSE" +
+                "LECT username, password FROM usersTable WHERE (username = @username)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UserName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_UserName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@username", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_username", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "username", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "password", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -792,7 +785,7 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT UserName, Password FROM dbo.[Table]";
+            this._commandCollection[0].CommandText = "SELECT username, password FROM dbo.usersTable";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -800,7 +793,7 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(RegisterDataSet.TableDataTable dataTable) {
+        public virtual int Fill(RegisterDataSet.usersTableDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -813,9 +806,9 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual RegisterDataSet.TableDataTable GetData() {
+        public virtual RegisterDataSet.usersTableDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            RegisterDataSet.TableDataTable dataTable = new RegisterDataSet.TableDataTable();
+            RegisterDataSet.usersTableDataTable dataTable = new RegisterDataSet.usersTableDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -823,7 +816,7 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(RegisterDataSet.TableDataTable dataTable) {
+        public virtual int Update(RegisterDataSet.usersTableDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -831,7 +824,7 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(RegisterDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "Table");
+            return this.Adapter.Update(dataSet, "usersTable");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -853,18 +846,18 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_UserName, string Original_Password) {
-            if ((Original_UserName == null)) {
-                throw new global::System.ArgumentNullException("Original_UserName");
+        public virtual int Delete(string Original_username, string Original_password) {
+            if ((Original_username == null)) {
+                throw new global::System.ArgumentNullException("Original_username");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_UserName));
+                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_username));
             }
-            if ((Original_Password == null)) {
-                throw new global::System.ArgumentNullException("Original_Password");
+            if ((Original_password == null)) {
+                throw new global::System.ArgumentNullException("Original_password");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_Password));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_password));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -886,18 +879,18 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string UserName, string Password) {
-            if ((UserName == null)) {
-                throw new global::System.ArgumentNullException("UserName");
+        public virtual int Insert(string username, string password) {
+            if ((username == null)) {
+                throw new global::System.ArgumentNullException("username");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(UserName));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(username));
             }
-            if ((Password == null)) {
-                throw new global::System.ArgumentNullException("Password");
+            if ((password == null)) {
+                throw new global::System.ArgumentNullException("password");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Password));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(password));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -919,30 +912,30 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string UserName, string Password, string Original_UserName, string Original_Password) {
-            if ((UserName == null)) {
-                throw new global::System.ArgumentNullException("UserName");
+        public virtual int Update(string username, string password, string Original_username, string Original_password) {
+            if ((username == null)) {
+                throw new global::System.ArgumentNullException("username");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(UserName));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(username));
             }
-            if ((Password == null)) {
-                throw new global::System.ArgumentNullException("Password");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Password));
-            }
-            if ((Original_UserName == null)) {
-                throw new global::System.ArgumentNullException("Original_UserName");
+            if ((password == null)) {
+                throw new global::System.ArgumentNullException("password");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_UserName));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(password));
             }
-            if ((Original_Password == null)) {
-                throw new global::System.ArgumentNullException("Original_Password");
+            if ((Original_username == null)) {
+                throw new global::System.ArgumentNullException("Original_username");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Original_Password));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_username));
+            }
+            if ((Original_password == null)) {
+                throw new global::System.ArgumentNullException("Original_password");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Original_password));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -964,8 +957,8 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Password, string Original_UserName, string Original_Password) {
-            return this.Update(Original_UserName, Password, Original_UserName, Original_Password);
+        public virtual int Update(string password, string Original_username, string Original_password) {
+            return this.Update(Original_username, password, Original_username, Original_password);
         }
     }
     
@@ -981,7 +974,7 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private TableTableAdapter _tableTableAdapter;
+        private usersTableTableAdapter _usersTableTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1003,12 +996,12 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public TableTableAdapter TableTableAdapter {
+        public usersTableTableAdapter usersTableTableAdapter {
             get {
-                return this._tableTableAdapter;
+                return this._usersTableTableAdapter;
             }
             set {
-                this._tableTableAdapter = value;
+                this._usersTableTableAdapter = value;
             }
         }
         
@@ -1031,9 +1024,9 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._tableTableAdapter != null) 
-                            && (this._tableTableAdapter.Connection != null))) {
-                    return this._tableTableAdapter.Connection;
+                if (((this._usersTableTableAdapter != null) 
+                            && (this._usersTableTableAdapter.Connection != null))) {
+                    return this._usersTableTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1048,7 +1041,7 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._tableTableAdapter != null)) {
+                if ((this._usersTableTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1062,12 +1055,12 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateUpdatedRows(RegisterDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tableTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Table.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._usersTableTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.usersTable.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._tableTableAdapter.Update(updatedRows));
+                    result = (result + this._usersTableTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1081,11 +1074,11 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateInsertedRows(RegisterDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tableTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Table.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._usersTableTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.usersTable.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._tableTableAdapter.Update(addedRows));
+                    result = (result + this._usersTableTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1099,11 +1092,11 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateDeletedRows(RegisterDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._tableTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Table.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._usersTableTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.usersTable.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._tableTableAdapter.Update(deletedRows));
+                    result = (result + this._usersTableTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1146,8 +1139,8 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._tableTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._tableTableAdapter.Connection) == false))) {
+            if (((this._usersTableTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._usersTableTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1183,13 +1176,13 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._tableTableAdapter != null)) {
-                    revertConnections.Add(this._tableTableAdapter, this._tableTableAdapter.Connection);
-                    this._tableTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._tableTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._tableTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._tableTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._tableTableAdapter.Adapter);
+                if ((this._usersTableTableAdapter != null)) {
+                    revertConnections.Add(this._usersTableTableAdapter, this._usersTableTableAdapter.Connection);
+                    this._usersTableTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._usersTableTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._usersTableTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._usersTableTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._usersTableTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1250,9 +1243,9 @@ namespace InsuranceManager.RegisterDataSetTableAdapters {
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._tableTableAdapter != null)) {
-                    this._tableTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tableTableAdapter]));
-                    this._tableTableAdapter.Transaction = null;
+                if ((this._usersTableTableAdapter != null)) {
+                    this._usersTableTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._usersTableTableAdapter]));
+                    this._usersTableTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

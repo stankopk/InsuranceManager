@@ -33,17 +33,15 @@
             this.RegLbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.UsernameTxt = new System.Windows.Forms.TextBox();
             this.PasswordTxt = new System.Windows.Forms.TextBox();
-            this.ConfirmPassTxt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(382, 167);
+            this.button1.Location = new System.Drawing.Point(308, 145);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 35);
             this.button1.TabIndex = 0;
@@ -55,11 +53,11 @@
             // 
             this.ReturnBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ReturnBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReturnBtn.Location = new System.Drawing.Point(231, 167);
+            this.ReturnBtn.Location = new System.Drawing.Point(12, 145);
             this.ReturnBtn.Name = "ReturnBtn";
             this.ReturnBtn.Size = new System.Drawing.Size(117, 35);
             this.ReturnBtn.TabIndex = 1;
-            this.ReturnBtn.Text = "Nevermind.";
+            this.ReturnBtn.Text = "Take me back!";
             this.ReturnBtn.UseVisualStyleBackColor = true;
             this.ReturnBtn.Click += new System.EventHandler(this.button2_Click_1);
             // 
@@ -95,17 +93,6 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Enter your desired password:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(48, 139);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(174, 20);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Confirm your password:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
             // UsernameTxt
             // 
             this.UsernameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -125,24 +112,13 @@
             this.PasswordTxt.TabIndex = 8;
             this.PasswordTxt.TextChanged += new System.EventHandler(this.PasswordTxt_TextChanged);
             // 
-            // ConfirmPassTxt
-            // 
-            this.ConfirmPassTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConfirmPassTxt.Location = new System.Drawing.Point(231, 137);
-            this.ConfirmPassTxt.Name = "ConfirmPassTxt";
-            this.ConfirmPassTxt.PasswordChar = '*';
-            this.ConfirmPassTxt.Size = new System.Drawing.Size(268, 24);
-            this.ConfirmPassTxt.TabIndex = 9;
-            // 
             // RegisterView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(519, 250);
-            this.Controls.Add(this.ConfirmPassTxt);
+            this.ClientSize = new System.Drawing.Size(519, 199);
             this.Controls.Add(this.PasswordTxt);
             this.Controls.Add(this.UsernameTxt);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.RegLbl);
@@ -151,6 +127,7 @@
             this.Name = "RegisterView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterView";
+            this.Load += new System.EventHandler(this.RegisterView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,9 +140,7 @@
         private System.Windows.Forms.Label RegLbl;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox UsernameTxt;
         private System.Windows.Forms.TextBox PasswordTxt;
-        private System.Windows.Forms.TextBox ConfirmPassTxt;
     }
 }

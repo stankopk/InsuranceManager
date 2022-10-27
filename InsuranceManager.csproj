@@ -63,16 +63,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connect.cs" />
     <Compile Include="RegisterDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RegisterDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
     <Compile Include="View\AdminView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\AdminView.Designer.cs">
       <DependentUpon>AdminView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\HomeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\HomeView.Designer.cs">
+      <DependentUpon>HomeView.cs</DependentUpon>
     </Compile>
     <Compile Include="View\LoginView.cs">
       <SubType>Form</SubType>
@@ -90,6 +98,9 @@
     </Compile>
     <EmbeddedResource Include="View\AdminView.resx">
       <DependentUpon>AdminView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\HomeView.resx">
+      <DependentUpon>HomeView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>

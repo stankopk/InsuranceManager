@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,40 @@ namespace InsuranceManager
 
         private void btnEnter_Click(object sender, EventArgs e)
         {
+            if (txtBoxUsername.Text != null && txtBoxPassword.Text != null)
+            {
+                try
+                {
+                    Connect obj = new Connect();
+                    obj.conn.ConnectionString = obj.locate;
 
+                    obj.conn.Open();
+                    SqlDataAdapter adapter = new SqlDataAdapter("SELECT COUNT (*) FROM usersTable  where username = '"+txtBoxUsername.Text+"' and  password = '"+txtBoxPassword.Text+"' ", obj.conn);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    if (dt.Rows[0][0].ToString() == "1")
+                    {
+                        HomeView hv = new HomeView();
+                        hv.Show();
+                        this.Hide();
+                    }
+
+                    else
+                    {
+                        MessageBox.Show("Incorrect account details");
+                    }
+
+                    obj.conn.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No empty fields are allowed");
+            }
         }
 
         private void RegBtn_Click(object sender, EventArgs e)
@@ -31,6 +65,11 @@ namespace InsuranceManager
         }
 
         private void lblLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxUsername_TextChanged(object sender, EventArgs e)
         {
 
         }
