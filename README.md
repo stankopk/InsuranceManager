@@ -1,1 +1,1 @@
-Project with my teamates from school.
+Project with teamates from school.
