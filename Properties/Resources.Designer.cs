@@ -63,9 +63,40 @@ namespace InsuranceManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ActualBackground {
+            get {
+                object obj = ResourceManager.GetObject("ActualBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hello {
             get {
                 object obj = ResourceManager.GetObject("hello", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lock_icon_black_white_black_background_illustration_lock_icon_black_white_black_background_vector_illustration_170336738_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("lock-icon-black-white-black-background-illustration-lock-icon-black-white-black-b" +
+                        "ackground-vector-illustration-170336738-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap profile_user_round_white_icon_symbol_png_11639594348fn8rlcxrqo_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("profile-user-round-white-icon-symbol-png-11639594348fn8rlcxrqo-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
