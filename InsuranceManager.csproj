@@ -154,6 +154,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\lock-icon-black-white-black-background-illustration-lock-icon-black-white-black-background-vector-illustration-170336738-removebg-preview.png" />
+    <None Include="Resources\profile-user-round-white-icon-symbol-png-11639594348fn8rlcxrqo-removebg-preview.png" />
+    <None Include="Resources\ActualBackground.jpg" />
     <Content Include="Resources\hello.jpg" />
   </ItemGroup>
   <ItemGroup>
