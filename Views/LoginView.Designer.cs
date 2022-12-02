@@ -48,7 +48,6 @@
             this.txtBoxUsername.Name = "txtBoxUsername";
             this.txtBoxUsername.Size = new System.Drawing.Size(249, 24);
             this.txtBoxUsername.TabIndex = 0;
-            this.txtBoxUsername.TextChanged += new System.EventHandler(this.txtBoxUsername_TextChanged);
             // 
             // btnEnter
             // 
@@ -79,7 +78,6 @@
             this.lblLogin.Size = new System.Drawing.Size(160, 44);
             this.lblLogin.TabIndex = 2;
             this.lblLogin.Text = "Welcome!";
-            this.lblLogin.Click += new System.EventHandler(this.lblLogin_Click);
             // 
             // txtBoxPassword
             // 

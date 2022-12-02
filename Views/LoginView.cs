@@ -63,15 +63,5 @@ namespace InsuranceManager
             rv.Show();
             this.Hide();   
         }
-
-        private void lblLogin_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtBoxUsername_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
