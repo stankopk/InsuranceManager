@@ -88,7 +88,6 @@
             this.RegLbl.Size = new System.Drawing.Size(198, 44);
             this.RegLbl.TabIndex = 2;
             this.RegLbl.Text = "Registration";
-            this.RegLbl.Click += new System.EventHandler(this.label1_Click);
             // 
             // label1
             // 
@@ -101,7 +100,6 @@
             this.label1.Size = new System.Drawing.Size(218, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Enter your username:";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label2
             // 
@@ -122,7 +120,6 @@
             this.UsernameTxt.Name = "UsernameTxt";
             this.UsernameTxt.Size = new System.Drawing.Size(249, 24);
             this.UsernameTxt.TabIndex = 7;
-            this.UsernameTxt.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // PasswordTxt
             // 
@@ -132,7 +129,6 @@
             this.PasswordTxt.PasswordChar = '*';
             this.PasswordTxt.Size = new System.Drawing.Size(249, 24);
             this.PasswordTxt.TabIndex = 8;
-            this.PasswordTxt.TextChanged += new System.EventHandler(this.PasswordTxt_TextChanged);
             // 
             // UserIconPictureBox
             // 
@@ -175,7 +171,6 @@
             this.Name = "RegisterView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterView";
-            this.Load += new System.EventHandler(this.RegisterView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.UserIconPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PasswordIconPictureBox)).EndInit();
             this.ResumeLayout(false);

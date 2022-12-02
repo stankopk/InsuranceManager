@@ -49,41 +49,11 @@ namespace InsuranceManager.View
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PasswordTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click_1(object sender, EventArgs e)
         {
             LoginView lv = new LoginView();
             lv.Show();
             this.Hide();
-        }
-
-        private void RegisterView_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
